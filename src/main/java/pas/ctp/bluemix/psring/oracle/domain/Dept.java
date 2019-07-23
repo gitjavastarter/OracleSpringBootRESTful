@@ -1,48 +1,74 @@
 package pas.ctp.bluemix.psring.oracle.domain;
 
-/**
- * Created by pasapicella on 19/11/15.
- */
+
 public class Dept
 {
-    private int deptno;
-    private String dname;
-    private String loc;
+	
+	private double lng;
+    private double lat;
+	private String category;
+    private int count;
+	private long rowid_num;
 
-    public Dept()
+	public Dept()
     {
     }
+    
+    
+	public double getLng() {
+		return lng;
+	}
 
-    public int getDeptno() {
-        return deptno;
-    }
 
-    public void setDeptno(int deptno) {
-        this.deptno = deptno;
-    }
 
-    public String getDname() {
-        return dname;
-    }
+	public void setLng(double lng) {
+		this.lng = lng;
+	}
 
-    public void setDname(String dname) {
-        this.dname = dname;
-    }
 
-    public String getLoc() {
-        return loc;
-    }
 
-    public void setLoc(String loc) {
-        this.loc = loc;
-    }
+	public double getLat() {
+		return lat;
+	}
 
-    @Override
-    public String toString() {
-        return "Dept{" +
-                "deptno=" + deptno +
-                ", dname='" + dname + '\'' +
-                ", loc='" + loc + '\'' +
-                '}';
-    }
+
+
+	public void setLat(double lat) {
+		this.lat = lat;
+	}
+	
+    public int getCount() {
+		return count;
+	}
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public long getRowid_num() {
+		return rowid_num;
+	}
+
+	public void setRowid_num(long rowid_num) {
+		this.rowid_num = rowid_num;
+	}
+
+	@Override
+	public String toString() {
+		return "Dept{" +
+				"lng=" + lng +
+				", lat=" + lat +
+				", category='" + category + '\'' +
+				", count=" + count +
+				", rowid_num=" + rowid_num +
+				'}';
+	}
 }

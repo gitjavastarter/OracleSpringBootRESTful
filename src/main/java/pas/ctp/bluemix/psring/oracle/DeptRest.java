@@ -20,4 +20,10 @@ public class DeptRest
     {
         return deptService.getAllDeps();
     }
+    
+    @RequestMapping(value = "/heatmap", method = RequestMethod.GET)
+    public List<Dept> heatmap()
+    {
+        return deptService.getHeatMap();
+    }
 }
